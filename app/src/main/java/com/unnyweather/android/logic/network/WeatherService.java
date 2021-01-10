@@ -1,7 +1,6 @@
 package com.unnyweather.android.logic.network;
 
 import com.unnyweather.android.SunnyWeatherApplication;
-import com.unnyweather.android.logic.model.DailyResponse;
 import com.unnyweather.android.logic.model.RealtimeResponse;
 
 import retrofit2.Call;
