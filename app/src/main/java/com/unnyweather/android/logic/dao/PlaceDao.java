@@ -9,8 +9,7 @@ import com.unnyweather.android.SunnyWeatherApplication;
 import com.unnyweather.android.logic.model.Place;
 
 public class PlaceDao {
-    void savePlace(Place place)
-    {
+
         public static void savePlace(Place place)
         {
             sharedPreferences().edit().putString("place",new Gson().toJson(place));
@@ -28,5 +27,5 @@ public class PlaceDao {
         private static SharedPreferences sharedPreferences(){
         return   SunnyWeatherApplication.context.getSharedPreferences("sunny_weather", Context.MODE_PRIVATE);
     }
-    }
+
 }
